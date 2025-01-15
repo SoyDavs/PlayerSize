@@ -19,12 +19,6 @@ class PlayerSize extends PluginBase {
     public function onEnable(): void {
         $this->saveDefaultConfig();
         $this->config = $this->getConfig();
-
-        $this->getLogger()->info(TextFormat::GREEN . "PlayerSize plugin enabled.");
-    }
-
-    public function onDisable(): void {
-        $this->getLogger()->info(TextFormat::YELLOW . "PlayerSize plugin disabled.");
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
