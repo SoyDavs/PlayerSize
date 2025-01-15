@@ -1,0 +1,41 @@
+# PlayerSize Configuration
+
+# Scale settings for different sizes
+scales:
+  normal: 1.0
+  small: 0.5
+  giant: 2.0
+  hide: 0.1
+
+# Command aliases
+aliases:
+  playersize: [ps]
+
+# Messages sent to players
+messages:
+  enabled: true
+  prefix: "§e[PlayerSize] §f"
+  help:
+    title: "§a--- PlayerSize Help ---"
+    commands:
+      - "§6/playersize help §f- Show this help message."
+      - "§6/playersize normal §f- Set your size to normal."
+      - "§6/playersize small §f- Set your size to small."
+      - "§6/playersize giant §f- Set your size to giant."
+      - "§6/playersize hide §f- Hide yourself."
+  no_permission: "§cYou do not have permission to use this command."
+  size_set:
+    normal: "§aYour size has been set to normal."
+    small: "§aYour size has been set to small."
+    giant: "§aYour size has been set to giant."
+    hide: "§aYou are now hidden."
+  unknown_command: "§cUnknown command. Use /ps help for a list of commands."
+
+# Permissions
+permissions:
+  use: "playersize.use"
+  help: "playersize.help"
+  normal: "playersize.normal"
+  small: "playersize.small"
+  giant: "playersize.giant"
+  hide: "playersize.hide"

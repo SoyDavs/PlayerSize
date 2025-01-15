@@ -1,0 +1,29 @@
+name: PlayerSize
+main: SoyDavs\PlayerSize\PlayerSize
+version: 1.0.0
+api: [5.0.0]
+commands:
+  playersize:
+    description: Manage your player size.
+    aliases: [ps]
+    usage: "/playersize <help|normal|small|giant|hide>"
+    permission: playersize.use
+permissions:
+  playersize.use:
+    description: Allows using the PlayerSize commands.
+    default: op
+  playersize.help:
+    description: Allows viewing help information for PlayerSize.
+    default: op
+  playersize.normal:
+    description: Allows setting player size to normal.
+    default: op
+  playersize.small:
+    description: Allows setting player size to small.
+    default: op
+  playersize.giant:
+    description: Allows setting player size to giant.
+    default: op
+  playersize.hide:
+    description: Allows hiding the player.
+    default: op
